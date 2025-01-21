@@ -9,16 +9,22 @@
             background-color: #00E1FF; /* Set the background color to #00E1FF */
             text-align: center; /* Center content */
             font-family: Arial, sans-serif; /* Set the font for the page */
+            display: flex; /* Enable flexbox layout */
+            flex-direction: column; /* Arrange items vertically */
+            justify-content: center; /* Vertically center the content */
+            align-items: center; /* Horizontally center the content */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        .content {
+            display: flex;
+            flex-direction: column; /* Align the logo and buttons vertically */
+            align-items: center; /* Center align the logo and buttons */
         }
         img {
             width: 400px; /* Increase the width of the logo */
             height: auto; /* Maintain aspect ratio */
-            margin-top: 20px; /* Add some space at the top */
-        }
-        h1 {
-            font-size: 36px; /* Set the font size for the title */
-            color: black; /* Set the title color to black */
-            margin-top: 20px; /* Add some space above the title */
+            margin-bottom: 20px; /* Add space below the logo */
         }
         button {
             background-color: black; /* Set the background color of the button */
@@ -28,7 +34,7 @@
             border: none; /* Remove the border */
             border-radius: 25px; /* Make the corners rounded */
             cursor: pointer; /* Change the cursor to a pointer on hover */
-            margin-top: 20px; /* Add space between the buttons */
+            margin-top: 10px; /* Add space between the buttons */
             transition: background-color 0.3s; /* Add a smooth transition effect */
         }
         button:hover {
@@ -37,13 +43,15 @@
     </style>
 </head>
 <body>
-    <!-- Logo at the top -->
-    <img src="logo.png" alt="Logo">
-    
-    <!-- Button 1 to navigate to game.html -->
-    <button onclick="window.location.href='game.html';">Play Greyhound Clicker</button>
-    
-    <!-- Button 2 to navigate to SpeedGreyhound's Scratch page -->
-    <button onclick="window.location.href='https://scratch.mit.edu/users/SpeedGreyhound/';">Other games by SpeedGreyhound</button>
+    <div class="content">
+        <!-- Logo at the top -->
+        <img src="logo.png" alt="Logo">
+        
+        <!-- Button 1 to navigate to game.html -->
+        <button onclick="window.location.href='game.html';">Play Greyhound Clicker</button>
+        
+        <!-- Button 2 to navigate to SpeedGreyhound's Scratch page -->
+        <button onclick="window.location.href='https://scratch.mit.edu/users/SpeedGreyhound/';">Other games by SpeedGreyhound</button>
+    </div>
 </body>
 </html>
