@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greyhound Clicker 1.7.6 Title Screen</title>
+    <style>
+        body {
+            background-color: #00E1FF; /* Set the background color to #00E1FF */
+            text-align: center; /* Center content */
+            font-family: Arial, sans-serif; /* Set the font for the page */
+            display: flex; /* Enable flexbox layout */
+            flex-direction: column; /* Arrange items vertically */
+            justify-content: center; /* Vertically center the content */
+            align-items: center; /* Horizontally center the content */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        .content {
+            display: flex;
+            flex-direction: column; /* Align the logo and buttons vertically */
+            align-items: center; /* Center align the logo and buttons */
+        }
+        img {
+            width: 400px; /* Increase the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add space below the logo */
+        }
+        button {
+            background-color: black; /* Set the background color of the button */
+            color: white; /* Set the text color */
+            font-size: 20px; /* Increase the font size */
+            padding: 15px 30px; /* Make the button larger */
+            border: none; /* Remove the border */
+            border-radius: 25px; /* Make the corners rounded */
+            cursor: pointer; /* Change the cursor to a pointer on hover */
+            margin-top: 10px; /* Add space between the buttons */
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+        button:hover {
+            background-color: #333; /* Darken the background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Logo at the top -->
+        <img src="logo.png" alt="Logo">
+        
+        <!-- Button 1 to navigate to game.html -->
+        <button onclick="window.location.href='game';">Play Greyhound Clicker</button>
+        
+        <!-- Button 2 to navigate to SpeedGreyhound's Scratch page -->
+        <button onclick="window.location.href='https://scratch.mit.edu/users/SpeedGreyhound/';">Other games by SpeedGreyhound</button>
+    </div>
+</body>
+</html>
